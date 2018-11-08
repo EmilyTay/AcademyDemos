@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/EmilyTay/AcademyDemos#readme",
   "dependencies": {
+    "chai": "^4.2.0",
     "express": "^4.16.4",
     "request": "^2.88.0"
   }

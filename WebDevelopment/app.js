@@ -7,7 +7,10 @@ const port = 3000
 // app.get('/bye', (req, res) => res.send('Bye World!'))
 
 // This endpoint exposes all the static resources in the frontend directory
-app.use('/frontend', express.static('frontend'));
+// app.use('/frontend', express.static('frontend'));
+app.get('/', function(req, res) {
+  res.sendFile('./frontend/index.html');
+});
 
 // This endpoint performs some logic and returns a variable to the client
 app.get('/dosomething', function (req, res) {
